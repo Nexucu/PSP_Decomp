@@ -1,0 +1,4 @@
+# Copiar a local.properties y ajustar la ruta del SDK.
+# (local.properties NO se versiona: contiene una ruta local.)
+sdk.dir=/home/kevin/Android/Sdk
+ndk.dir=/home/kevin/Android/Sdk/ndk/26.1.10909125

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PSP Flower (Moppi Productions, 2005) — port Vulkan para Android.
+     NativeActivity pura: sin Java/Kotlin.
+     El atributo package es para el build manual con aapt2; con Gradle el
+     applicationId/namespace de app/build.gradle es el que manda. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.moppi.flower.vulkan">
+
+    <uses-feature android:name="android.hardware.vulkan.version"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:label="PSP Flower — Vulkan"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:hardwareAccelerated="false">
+        <activity
+            android:name="android.app.NativeActivity"
+            android:label="PSP Flower — Vulkan"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="flower_vulkan" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
