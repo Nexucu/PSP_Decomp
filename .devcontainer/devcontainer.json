@@ -1,1 +1,24 @@
-{"customizations":{"vscode":{"extensions":["vscjava.vscode-java-pack","ms-vscode.cpptools"]}},"features":{"ghcr.io/devcontainers/features/git:1":{}},"image":"mcr.microsoft.com/devcontainers/java:17-bookworm","name":"Flower Vulkan (Android)","postCreateCommand":"bash .devcontainer/setup-android.sh","remoteEnv":{"ANDROID_HOME":"/opt/android-sdk","ANDROID_SDK_ROOT":"/opt/android-sdk","JAVA_HOME":"/usr/lib/jvm/msopenjdk-17-amd64"}}
+{
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "ms-vscode.cpptools"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
+  },
+  "image": "mcr.microsoft.com/devcontainers/java:17-bookworm",
+  "name": "Flower Vulkan (Android)",
+  "postCreateCommand": "bash .devcontainer/setup-android.sh",
+  "remoteEnv": {
+    "ANDROID_HOME": "/opt/android-sdk",
+    "ANDROID_SDK_ROOT": "/opt/android-sdk",
+    "JAVA_HOME": "/usr/lib/jvm/msopenjdk-17-amd64"
+  }
+}
